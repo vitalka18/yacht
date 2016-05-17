@@ -1,0 +1,93 @@
+$icons: (0:0)
+$icons: map-merge($icons,(anchor: (X: -40px, Y:0px, W: 25px, H: 25px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(date-ac: (X: 0px, Y:-34px, W: 24px, H: 26px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(date-df: (X: -28px, Y:-34px, W: 24px, H: 26px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(ears: (X: 0px, Y:-64px, W: 20px, H: 16px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fb: (X: -69px, Y:0px, W: 17px, H: 35px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(time-ac: (X: -90px, Y:0px, W: 24px, H: 24px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(time-df: (X: -90px, Y:-28px, W: 24px, H: 24px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(tw: (X: 0px, Y:0px, W: 36px, H: 30px, TW: 114px, TH: 80px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
+
+@mixin s($i)
+	+sprite($i)
+@mixin sp($i)
+	+sprite-position($i)
+@mixin sr($i)
+	+sprite-retina($i)	
+
+//
+//.icon-anchor
+//	width: 25px
+//	height: 25px
+//	background-image: url('../img/icons.png')
+//	background-position: -40px 0px
+//
+//.icon-date-ac
+//	width: 24px
+//	height: 26px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -34px
+//
+//.icon-date-df
+//	width: 24px
+//	height: 26px
+//	background-image: url('../img/icons.png')
+//	background-position: -28px -34px
+//
+//.icon-ears
+//	width: 20px
+//	height: 16px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -64px
+//
+//.icon-fb
+//	width: 17px
+//	height: 35px
+//	background-image: url('../img/icons.png')
+//	background-position: -69px 0px
+//
+//.icon-time-ac
+//	width: 24px
+//	height: 24px
+//	background-image: url('../img/icons.png')
+//	background-position: -90px 0px
+//
+//.icon-time-df
+//	width: 24px
+//	height: 24px
+//	background-image: url('../img/icons.png')
+//	background-position: -90px -28px
+//
+//.icon-tw
+//	width: 36px
+//	height: 30px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px 0px
+//

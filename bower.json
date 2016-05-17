@@ -1,0 +1,30 @@
+{
+  "name": "font site",
+  "description": "font magazine",
+  "main": "index.html",
+  "authors": [
+    "Kriskov Vitaliy (kriskov.vitaliy@gmail.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "font",
+    "magazine",
+    "vitalka18"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.sass": "^3.0.0",
+    "modernizer": "^2.8.2",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {}
+}

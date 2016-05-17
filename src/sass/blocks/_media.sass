@@ -1,0 +1,170 @@
+.xs-open-drop-menu
+  display: none
+@media screen and (max-width: 1200px)
+  .slider-prev
+    left: 20px
+
+  .slider-next
+    right: 20px
+  .map
+    height: 350px
+
+  .services-item__preview-link
+    bottom: -65px
+@media screen and (max-width: 991px)
+  .label-title
+    margin-top: 0
+  .form-modal .row
+    margin-bottom: 0
+    .form-group
+      margin-bottom: 20px
+  .services-item__preview-link
+    bottom: -40px
+  .callback
+    top: 20px
+    right: 20px
+
+  .nav>li>a
+    padding: 10px
+
+  .navbar-main
+    padding: 10px 25px
+
+  .contact-info-wrap
+    .text-left,
+    .text-right
+      text-align: center
+    address
+      margin-bottom: 15px
+  .bottom-round-bg
+    margin-top: 15px
+    padding-top: 50px
+    background-position: center bottom
+    padding-bottom: 15px
+  .aside-title
+    text-align: center
+@media screen and (max-width: 768px)
+  .services-item__preview-link
+    bottom: -96px
+  .aside-block
+    .news-article
+      max-width: 260px
+      margin: 0 auto 15px
+  .weather-wrap
+    img
+      width: 100%
+
+  .callback
+    position: static
+    margin: 20px 0
+    text-align: center
+  .header__bottom
+    padding: 10px 0
+    position: static
+    background: #fca412
+    border-bottom: 5px solid #fed99c
+  .header
+    height: auto
+    background-size: cover
+
+  .services-item
+    margin: 0 0
+    padding: 0 30px
+    max-width: inherit
+
+  .services-item__preview
+    max-width: 320px
+    img
+      border-radius: 50%
+  .slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img
+    transform: none
+  .out_secondary 
+    .header
+      background: linear-gradient(to bottom, rgb(235, 121, 6) 0%, rgb(253, 208, 73)  100%)
+  .top-round-bg
+    border-top: 5px solid #fed99c
+    background: linear-gradient(to bottom, rgb(235, 121, 6) 0%, rgb(253, 208, 73) 240px, rgb(255, 255, 255) 51%, rgb(255, 255, 255) 100%)
+  
+  .bottom-round-bg
+    border-bottom: 5px solid #fed99c
+    background: linear-gradient(to top, rgb(235, 121, 6) 0%, rgb(253, 208, 73) 60%, rgb(255, 255, 255) 100%)
+  .header
+    margin-bottom: 0
+    background: linear-gradient(to bottom, rgb(235, 121, 6) 0%, rgb(253, 208, 73) 100%)
+  .main-top
+    margin-top: 0
+    background: linear-gradient(to bottom, rgb(235, 121, 6) 0%, #fec552 100%)
+  
+  .navbar-default
+    background: #051c31
+    border-top: 5px solid #96a0a9
+    border-bottom: 5px solid #96a0a9
+  .navbar-main
+    position: static
+    display: block
+    height: auto
+    width: auto
+    padding: 0 10px
+    background: #051c31
+    > li
+      display: block
+      &:not(:last-child)
+        border-bottom: 1px solid #96a0a9
+      a
+        text-align: left
+    .has-dropdown a
+      padding-right: 30px
+    .dropdown-menu
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      display: none
+      visibility: visible
+      opacity: 1
+      background: none
+      box-shadow: none
+      text-align: center
+      padding: 0
+      transform: translate(0, 0)
+      transition: none
+      float: none
+      border-bottom: 1px solid #96a0a9
+      li
+        a
+          padding: 10px 10px 10px 20px 
+          color: #fff
+          text-align: left
+          &:hover,
+          &:focus
+            background: none
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    border-top: 5px solid #96a0a9
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+    background: #96a0a9
+    .icon-bar
+      background: #051c31
+
+  .navbar-default .navbar-toggle .icon-bar
+    background: #fff
+  .main-slider__item
+    img
+      max-width: inherit
+      min-width: 100%
+      min-height: 250px
+    .slick-dots
+      display: none
+  .xs-open-drop-menu
+    display: block
+    width: 20px
+    height: 20px
+    position: absolute
+    right: 5px
+    top: 0
+    bottom: 0
+    margin: auto
+    transition: .3s transform
+    &.open
+      transform: rotate(90deg)

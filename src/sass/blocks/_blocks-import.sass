@@ -1,0 +1,301 @@
+@import buttons
+@import slider
+@import nav
+
+.out_secondary 
+  background: linear-gradient(to bottom, #fce9aa 0%, #fce9aa 15%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%)
+  .header
+    background: url(../img/secondary-bg.png) center top no-repeat
+  .main-top
+    background: none
+    height: auto
+    min-height: 1px
+  .bottom-round-bg
+    margin-top: 85px
+.header
+  position: relative
+  height: 250px
+  padding: 21px 0 0
+  margin-bottom: -65px
+  background: url(../img/bg-top.png) center top no-repeat
+  z-index: 5
+
+.main-top
+  position: relative
+  min-height: 620px
+  margin-top: -83px
+  padding-bottom: 42px
+  background: url(../img/bg-bottom.png) center top no-repeat
+  z-index: 5  
+
+.callback
+  position: absolute
+  right: 215px
+  top: 73px
+  .icon-ears
+    position: relative
+    top: 4px
+    margin-right: 3px
+
+.logo
+  width: 220px
+  margin: 0 auto
+  transition: opacity .3s
+  a
+    display: block
+    text-align: center
+  &:hover
+    opacity: .3s
+
+.header__bottom
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 25px
+  text-align: center
+  p
+    margin: 0
+    font-size: 24px
+    color: #051c31
+
+.footer
+  padding: 35px 0 25px
+  border-bottom: 2px solid #fff
+  background: #051c31
+  color: #fff
+  p
+    margin: 0
+    font-size: 18px
+    text-align: center
+.map
+  width: 100%
+  height: 530px
+
+.top-round-bg
+  margin: 25px 0 0
+  padding: 0 0 60px
+  background: url(../img/round-top-bg.jpg) center top no-repeat
+
+.bottom-round-bg
+  margin: -55px 0 0
+  padding: 110px 0 55px
+  background: url(../img/round-bottom-bg.jpg) center top no-repeat
+
+.contact
+  h2
+    margin: 0 0 55px
+    text-align: center
+    font-size: 18px
+    color: #051c31
+    text-transform: uppercase
+
+.contact-info-wrap
+  margin: 55px 0 0
+  font-size: 18px
+  color: #fff
+  address
+    line-height: 1.2
+    margin-bottom: 0
+  p 
+    margin-bottom: 0
+    + p
+      margin-top: 15px
+
+.separator
+  margin: 17px 0 30px
+  border-top: 1px solid #f38f0c
+
+.weather-wrap
+  border: 1px solid #ccc
+  margin-bottom: 25px
+
+.news-article__preview
+  margin: 5px 0 10px
+
+.news-article__time
+  color: #ff7800
+  font-size: 16px
+  b
+    font-size: 37px
+
+.news-article__title,
+.news-article__title a
+  font-size: 16.7px
+  color: #ff7800
+  &:hover
+    color: #ff7800
+    text-decoration: none
+
+.news-article__title
+  margin: 43px 0 16px
+
+.panel
+  border-radius: 0
+.panel-primary
+  border-color: #345084
+
+.panel-heading
+  border-radius: 0
+
+.panel-primary
+  >.panel-heading 
+    padding: 20px 0 25px
+    background: #345084
+  .panel-body
+    line-height: 1.3
+    padding: 20px 30px 20px 30px
+
+.panel-action
+  margin-top: 10px
+
+.panel-title
+  font-size: 24px
+  font-family: "SegoeUILight", sans-serif
+  [class*="icon-"]
+    margin-right: 5px
+    position: relative
+    top: 2px
+
+.dropdown-panel
+  visibility: hidden
+  opacity: 0
+  transform: translate(0, 30%)
+  position: absolute
+  top: 50px
+  right: -20px
+  left: -20px
+  bottom: -20px
+  transition: all .3s
+  &.is-open
+    visibility: visible
+    opacity: 1
+    transform: translate(0, 0)
+  .panel-body
+    height: 360px
+    overflow-y: auto
+    font-size: 14px
+.dropdown-menu
+  border-radius: 0
+  border: none
+  li
+    a
+      font-size: 18px
+      color: #051c31
+.goods-action
+  margin: 30px 0
+
+.modal-content
+  border-radius: 18px
+  border: 5px solid #7c7b77
+.modal-header
+  position: relative
+  border-radius: 13px
+  padding: 25px 120px 50px
+  background: url(../img/modal-head.png) center no-repeat
+  background-size: 115% 115%
+  border: none
+  color: #fff
+  
+  .close
+    position: absolute
+    top: -5px 
+    right: 10px
+    margin-right: 20px
+    margin-top: 180px
+    color: #fff
+    font-size: 60px
+.modal-title
+  font-size: 30px
+  text-align: center
+.modal-body
+  padding-bottom: 0
+.modal-foot
+  padding: 0 0 20px
+.form-modal
+  padding: 0 60px
+  .form-group
+    margin-bottom: 0
+  .row
+    margin-bottom: 25px
+
+.form-control
+  border: 1px solid #eb7906
+  border-radius: 0
+
+.form-control:focus
+  border: 1px solid #eb7906
+  box-shadow: none
+  ~ .input-group-addon
+    color: #eb7906
+.input-group
+  .form-control
+    border-right: none
+.input-group-addon
+  border-radius: 0
+  background: none
+  border-color: #eb7906
+  font-size: 18px
+  transition: all .3s
+
+dl
+  text-align: left
+.dl-horizontal dd,
+.dl-horizontal dt
+  text-align: left
+  
+.price-info
+  dl
+    font-size: 18px
+  dt
+    width: 90px
+  dd
+    margin-left: 100px
+  dt, dd
+    font-weight: normal
+.separete-bg
+  dl.dl-horizontal
+    padding: 5px 15px
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+    dt
+      color: #365674
+      font-weight: normal
+    dd
+      color: #051c31
+      font-weight: normal
+  dl:nth-child(2n)
+    background: #fef8e5
+
+.bootstrap-datetimepicker-widget table td.day,
+.bootstrap-datetimepicker-widget table th
+  border: 1px solid rgb(235, 121, 6)
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover
+  border-radius: 0
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover
+  background: rgb(254, 248, 229)
+.bootstrap-datetimepicker-widget table thead tr:first-child th
+  color: #fff
+  background: rgb(235, 121, 6)
+  border-radius: 0
+  &:hover
+    background: rgba(235, 121, 6, .8)
+.bootstrap-datetimepicker-widget table td.separator
+  margin: 0
+  border: none
+.bootstrap-datetimepicker-widget table td span
+  width: 16px
+  height: 16px
+  line-height: 16px
+.bootstrap-datetimepicker-widget table td 
+  height: 16px
+  line-height: 16px
+  width: 16px
+.timepicker-picker
+  width: 100px
+
+.time
+  .dropdown-menu
+    width: 80px
+  .table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td
+    padding: 0
