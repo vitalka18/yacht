@@ -266,6 +266,22 @@ small { font-size: 0.7em; font-weight: normal; }
 
 .carousel-fade .carousel-control { z-index: 2; }
 
+.icon-anchor { width: 25px; height: 25px; background-image: url("../img/icons.png"); background-position: -40px 0px; }
+
+.icon-date-ac { width: 24px; height: 26px; background-image: url("../img/icons.png"); background-position: 0px -34px; }
+
+.icon-date-df { width: 24px; height: 26px; background-image: url("../img/icons.png"); background-position: -28px -34px; }
+
+.icon-ears { width: 20px; height: 16px; background-image: url("../img/icons.png"); background-position: 0px -64px; }
+
+.icon-fb { width: 17px; height: 35px; background-image: url("../img/icons.png"); background-position: -69px 0px; }
+
+.icon-time-ac { width: 24px; height: 24px; background-image: url("../img/icons.png"); background-position: -90px 0px; }
+
+.icon-time-df { width: 24px; height: 24px; background-image: url("../img/icons.png"); background-position: -90px -28px; }
+
+.icon-tw { width: 36px; height: 30px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
+
 .navbar-default { background: none; border-color: transparent; }
 
 .navbar-main { position: absolute; top: 12px; left: 0; right: 0; display: table; max-width: 1000px; width: 100%; height: 67px; margin: 0 auto; padding: 10px 50px; background: url(../img/menu-bg.png) center top no-repeat; }
