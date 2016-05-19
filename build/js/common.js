@@ -134,11 +134,20 @@ $(document).ready(function() {
   });
   $('#orderModal').on('show.bs.modal', function (e) {
     $('.js-time').datetimepicker({
-      format: 'hh:mm'
+      format: 'HH:mm'
     });
     $('.js-date').datetimepicker({
       format: 'DD-MM-YYYY'
     });
+  });
+
+  $('.js-scroll').on('click', function(event) {
+    var id = $(this).attr('href');
+    if( $(id).length ) {
+      event.preventDefault();
+      var top = $(id).offset().top;
+      $("html, body").animate({ scrollTop: top - 30 }, 1000);
+    }
   });
   
 });//end document ready

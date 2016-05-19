@@ -57,25 +57,25 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-main">
                 <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#">Наши услуги</a></li>
+                <li><a class="js-scroll" href="#services">Наши услуги</a></li>
                 <li class="has-dropdown">
-                  <a href="#">Катера <span class="js-open-menu xs-open-drop-menu glyphicon glyphicon-chevron-right"></span></a>
+                  <a class="js-scroll" href="#boat">Катера <span class="js-open-menu xs-open-drop-menu glyphicon glyphicon-chevron-right"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Аренда катера</a></li>
                     <li><a href="#">Морские прогулки/экскурсии</a></li>
                     <li><a href="#">Морская рыбалка</a></li>
                   </ul>
                 </li>
-                <li><a href="">Аренда квартир</a></li>
-                <li><a href="">Автомобили</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a class="js-scroll" href="#apartment">Аренда квартир</a></li>
+                <li><a class="js-scroll" href="#car">Автомобили</a></li>
+                <li><a class="js-scroll" href="#contact">Контакты</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
 
         <div class="container">
-          <h2 class="title">Наши услуги</h2>
+          <h2 id="services" class="title">Наши услуги</h2>
           <div class="services-wrap">
             <div class="services-item">
               <h3 class="services-item__title">Аренда катера</h3>
@@ -108,7 +108,7 @@
             </div> <!-- /.services-item -->
 
             <div class="services-item">
-              <h3 class="services-item__title">Аренда авто</h3>
+              <h3  class="services-item__title">Аренда авто</h3>
 
               <div class="services-item__preview">
                 <div class="services-item__preview-inner">
@@ -173,7 +173,7 @@
       <main class="main">
         <div class="slider-wrap">
           <div class="container">
-            <h2 class="slider-title">Наши катера</h2>
+            <h2 id="boat" class="slider-title">Наши катера</h2>
 
             <div class="slider row js-our-bout-slider">
               <div class="our-bout-slide">
@@ -230,7 +230,7 @@
         <div class="top-round-bg">
           <div class="container">
             <div class="rent-apartment-wrap">
-              <h2 class="slider-title-white"> Аренда жилья посуточно</h2>
+              <h2 id="apartment" class="slider-title-white"> Аренда жилья посуточно</h2>
 
               <div class="slider row js-rent-slider">
                 <div class="rent-slide">
@@ -326,7 +326,7 @@
             </div><!-- /.rent-apartment-wrap -->
 
             <div class="rent-car-wrap">
-              <h2 class="slider-title">Аренда авто</h2>
+              <h2 id="car" class="slider-title">Аренда авто</h2>
 
               <div class="slider js-rent-slider">
                 <div class="rent-slide">
@@ -461,7 +461,7 @@
           </div>
         </div>
         
-        <div class="bottom-round-bg contact">
+        <div id="contact" class="bottom-round-bg contact">
           <div class="container">
             <h2>Присоединяйтесь</h2>
             <div class="social-link-wrap row">
@@ -488,6 +488,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title">Обратный звонок</h4>
           </div>
           <div class="modal-body">

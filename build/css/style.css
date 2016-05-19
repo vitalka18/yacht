@@ -111,22 +111,6 @@ td, th { padding: 0; }
 .slick-dots li.slick-active button { background: #000; }
 .slick-dots button { display: block; width: 10px; height: 10px; background: #fff; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 
-.icon-anchor { width: 25px; height: 25px; background-image: url("../img/icons.png"); background-position: -40px 0px; }
-
-.icon-date-ac { width: 24px; height: 26px; background-image: url("../img/icons.png"); background-position: 0px -34px; }
-
-.icon-date-df { width: 24px; height: 26px; background-image: url("../img/icons.png"); background-position: -28px -34px; }
-
-.icon-ears { width: 20px; height: 16px; background-image: url("../img/icons.png"); background-position: 0px -64px; }
-
-.icon-fb { width: 17px; height: 35px; background-image: url("../img/icons.png"); background-position: -69px 0px; }
-
-.icon-time-ac { width: 24px; height: 24px; background-image: url("../img/icons.png"); background-position: -90px 0px; }
-
-.icon-time-df { width: 24px; height: 24px; background-image: url("../img/icons.png"); background-position: -90px -28px; }
-
-.icon-tw { width: 36px; height: 30px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
-
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -368,7 +352,7 @@ small { font-size: 0.7em; font-weight: normal; }
 .modal-content { -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px; border: 5px solid #7c7b77; }
 
 .modal-header { position: relative; -webkit-border-radius: 13px; -moz-border-radius: 13px; border-radius: 13px; padding: 25px 120px 50px; background: url(../img/modal-head.png) center no-repeat; -moz-background-size: 115% 115%; -o-background-size: 115% 115%; background-size: 115% 115%; border: none; color: #fff; }
-.modal-header .close { position: absolute; top: -5px; right: 10px; margin-right: 20px; margin-top: 180px; color: #fff; font-size: 60px; }
+.modal-header .close { position: absolute; top: -5px; right: 10px; margin-right: 0px; margin-top: 0px; color: #fff; font-size: 60px; }
 
 .modal-title { font-size: 30px; text-align: center; }
 
